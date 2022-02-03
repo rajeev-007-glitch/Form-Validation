@@ -18,7 +18,7 @@ userName.addEventListener("blur", () => {
   console.log("Name Blurred");
 
   // Validate name here
-  let regExp = /(^[a-zA-Z][0-9a-zA-Z]{0,20}$)/;
+  let regExp = /(^[a-zA-Z_\.\-][0-9a-zA-Z_\.\-]{0,20}$)/;
   let string = userName.value;
   console.log(regExp, string);
 
